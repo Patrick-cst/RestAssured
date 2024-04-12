@@ -1,0 +1,119 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-12T19:35:22.418Z",
+        "line": 23,
+        "name": "Realizar login em viagens",
+        "description": "",
+        "id": "livraria;realizar-login-em-viagens",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2939033200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "que o usuario realize o login \"admin@email.com\" \"654321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@email.com\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"654321\"",
+                  "offset": 48
+                }
+              ],
+              "location": "ViagemSteps.que_o_usuario_realize_o_login(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 132793200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "cadastrar um livro com os dados acompanhante \"Patrick\" dataPartida \"2024-10-04\" dataRetorno \"2024-10-05\" localDeDestino \"Fortaleza\" regiao \"Norte\" no endpoint \"/v1/viagens\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Patrick\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"2024-10-04\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"2024-10-05\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"Fortaleza\"",
+                  "offset": 120
+                },
+                {
+                  "val": "\"Norte\"",
+                  "offset": 139
+                },
+                {
+                  "val": "\"/v1/viagens\"",
+                  "offset": 159
+                }
+              ],
+              "location": "ViagemSteps.cadastrar_um_livro_com_os_dados_acompanhante_dataPartida_dataRetorno_localDeDestino_regiao_no_endpoint(String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "validar cadastro concluido com sucesso statuscode 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 50
+                }
+              ],
+              "location": "ViagemSteps.validar_cadastro_concluido_com_sucesso_statuscode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@01"
+          }
+        ]
+      }
+    ],
+    "name": "Livraria",
+    "description": "",
+    "id": "livraria",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/livro.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
